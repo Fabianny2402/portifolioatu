@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Fabianny Pagung</title>
+
+  <nav>
+  <a href="/">Início</a>
+  <a href="/sobre">Sobre Mim</a>
+</nav>
+
+  <!-- CSS local (em /static/style.css) -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <header>
+    <img src="{{ url_for('static', filename='img.jpg3.jpeg') }}" alt="Foto Fabianny">
+    <h1>Portfólio</h1>
+    <p><strong>Fabianny Pagung</strong> | Cursante de T.I (2024-2026)</p>
+    <p>📞 (27) 99773-6755</p>
+
+    <div class="social">
+      <a href="https://www.linkedin.com/in/fabianny-pagung-629426382?trk=contact-info" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/exot4_?igsh=bW43N2g5a2Q1aTk4&utm_source=qr" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </header>
+
+  <section>
+    <h2>APRESENTAÇÃO</h2>
+    <p>Sou uma pessoa curiosa, criativa e em constante busca por evolução.
+    Gosto de aprender coisas novas, explorar ideias diferentes e transformar pensamentos em projetos reais.
+    Meu sonho é crescer profissionalmente, construindo uma carreira que una meus talentos e paixões,
+    enquanto gero impacto positivo ao meu redor.</p>
+  </section>
+
+  <section>
+    <h2>PROFISSIONAL</h2>
+    <p>Sou dedicada, com facilidade para aprender e me adaptar a novos desafios.
+    Gosto de trabalhar em equipe, mas também sei atuar de forma independente, sempre buscando entregar qualidade e resultados.</p>
+    <p>Iniciei meus estudos no SENAI em setembro de 2024, cursando Tecnologia da Informação (T.I.).
+    Tenho interesse em HTML, Python, e gosto de atividades práticas com slides, Excel e Word.</p>
+  </section>
+
+  <section>
+    <h2>PESSOAL</h2>
+    <p>Sou criativa, curiosa e comunicativa. Amo bichos, estar na praia e sentir a energia do mar,
+    além de me dedicar à leitura e à música.
+    Minha filha é parte fundamental da minha vida e valorizo muito a companhia de pessoas queridas.</p>
+  </section>
+
+  <section>
+    <h2>GALERIA</h2>
+    <div class="galeria">
+      <img src="{{ url_for('static', filename='img.jpg1.jpeg') }}" alt="Foto 1">
+      <img src="{{ url_for('static', filename='img.jpg2.png') }}" alt="Foto 2">
+    </div>
+  </section>
+
+  <footer>
+    <p>📍 Avenida Paulo Miguel Bohomoletz, 520 | Setembro, 2024</p>
+    <p>&copy; 2024 - Portfólio de Fabianny Pagung</p>
+  </footer>
+
+  <!-- BOTÃO PARA IR À PÁGINA 2 -->
+<div style="text-align: center; margin-top: 20px;">
+  <a href="/sobre" 
+     style="display: inline-block; padding: 12px 25px; 
+            background-color: #725485; color: white; 
+            font-weight: bold; text-decoration: none; 
+            border-radius: 30px; font-size: 18px; 
+            transition: background-color 0.3s;">
+    Página 2 ➡
+  </a>
+</div>
+
+</body>
+</html>
